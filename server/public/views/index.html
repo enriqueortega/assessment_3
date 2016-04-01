@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Assessment 3</title>
+    <!-- scripts -->
+    <script type='text/javascript' src='./assets/vendors/angular.min.js'></script>
+    <script type='text/javascript' src='./assets/vendors/angular-route.min.js'></script>
+    <!-- custom scripts -->
+    <script type='text/javascript' src='./assets/scripts/client.js'></script>
+    <script type='text/javascript' src='./assets/scripts/controllers/ViewController.js'></script>
+    <script type='text/javascript' src='./assets/scripts/controllers/AddController.js'></script>
+    <script type='text/javascript' src='./assets/scripts/factories/HeroFactory.js'></script>
+
+  </head>
+  <body>
+    <h1>Super Hero Selector</h1>
+    <ul>
+      <li><a href="#add">ADD</a></li>
+      <li><a href="#view">VIEW</a></li>
+    </ul>
+
+    <main ng-view>
+
+    </main>
+  </body>
+</html>
