@@ -9,9 +9,9 @@ myApp.factory('HeroFactory', ['$http', function($http){
     });
   };
 
-  var postData = function(){
-
-      $http.post('/heroes').then(function(response){
+  var postData = function(data){
+      $http.post('/heroes', data).then(function(response){
+        console.log(response);
       console.log('postData fired');
     });
   };

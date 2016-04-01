@@ -4,7 +4,7 @@ var path = require('path');
 var Hero = require('../models/heroes.js');
 
 router.get('/heroes', function(req, res){
-  People.find({}, function(err,data){
+  Hero.find({}, function(err,data){
     if(err){
       console.log(err);
     }
@@ -14,6 +14,7 @@ router.get('/heroes', function(req, res){
 
 
 router.post('/heroes', function(req, res){
+  console.log(req.body);
     var addedHero = new Hero({
       "alias" : req.body.alias,
       "first_name" : req.body.first_name,

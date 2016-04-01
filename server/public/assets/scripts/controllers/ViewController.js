@@ -4,7 +4,8 @@ myApp.controller('ShowController', ['$scope', 'HeroFactory', function($scope, He
   $scope.heroArray = [];
 
   heroFactory.getData().then(function(){
-    $scope.gremlins = heroFactory.data;
-    $scope.heroArray = $scope.gremlins.results;
+    $scope.heroes = heroFactory.data;
+    $scope.heroArray = $scope.heroes.results;
+    console.log($scope.heroArray);
   });
 }]);

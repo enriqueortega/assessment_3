@@ -5,5 +5,6 @@ myApp.controller('AddController', ['$scope', 'HeroFactory', function($scope, Her
   // Posting through the factory to the DB
   $scope.submit = function(data){
     heroFactory.postData(data);
+    console.log(data);
   };
 }]);
